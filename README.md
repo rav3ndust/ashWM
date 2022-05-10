@@ -1,4 +1,4 @@
-# Luke's build of dwm
+# rav3ndust's build of dwm
 
 ## FAQ
 
@@ -34,3 +34,8 @@ sudo make install
 ## Please install `libxft-bgra`!
 
 This build of dwm does not block color emoji in the status/info bar, so you must install [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra/) from the AUR, which fixes a libxft color emoji rendering problem, otherwise dwm will crash upon trying to render one. Hopefully this fix will be in all libxft soon enough.
+
+## Credits
+
+This build of dwm is a fork of [Luke Smith's dwm build](https://github.com/LukeSmithxyz/dwm).
+Info on vanilla dwm can be found [here](https://dwm.suckless.org/).
