@@ -15,13 +15,16 @@ static int swallowfloating    = 0;        /* 1 means swallow floating windows by
 static int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
+static const int usealtbar          = 1;        /* 1 means use non-dwm status bar */
+//static const char *altbarclass = "Polybar";     /* Alternate bar class name */
+//static const char *altbarcmd  = "$HOME/bar.sh"; /* Alternate bar launch command */
 static char *fonts[]          = { "monospace:size=10", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true"  };
-static char normbgcolor[]           = "#222222";
+static char normbgcolor[]           = "#000000";
 static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#bbbbbb";
-static char selfgcolor[]            = "#eeeeee";
+static char normfgcolor[]           = "#FF10F0";
+static char selfgcolor[]            = "#39FF14";
 static char selbordercolor[]        = "#FF10F0";
-static char selbgcolor[]            = "#005577";
+static char selbgcolor[]            = "#301934";
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
