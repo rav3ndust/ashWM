@@ -1,4 +1,18 @@
-# rav3ndust's build of dwm
+# ashWM
+
+My fork of [Suckless's](https://suckless.org) amazing **dwm**. 
+
+![screenshot](https://user-images.githubusercontent.com/35274771/168045559-0bea5fd8-5f93-49c3-a51f-091869b6b455.png)
+##### all the glory of dwm, with an elegant theme, custom selection of tools, custom scripts, adjustable gaps, and several patches from the suckless site.
+
+It aims to be simple and elegant, visually appealing and yet ready for any workflow. 
+
+That's what tiling window managers do best, after all!
+
+![screenshot2](https://user-images.githubusercontent.com/35274771/168047332-7c3d1f97-fa2e-4012-a7f1-459a96636ee8.png)
+###### ready for anything - whether you're programming, writing, or just hanging out online.
+
+A selection of minimal and extensible programs with a swath of custom keybindings that can be easily changed.
 
 ## FAQ
 
