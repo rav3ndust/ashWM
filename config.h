@@ -1,8 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* Constants */
-#define TERMINAL "st"
-#define TERMCLASS "St"
+#define TERMINAL "alacritty"
+#define TERMCLASS "Alacritty"
 
 /* appearance */
 static unsigned int borderpx  = 3;        /* border pixel of windows */
@@ -20,7 +20,7 @@ static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#bbbbbb";
 static char selfgcolor[]            = "#eeeeee";
-static char selbordercolor[]        = "#770000";
+static char selbordercolor[]        = "#FF10F0";
 static char selbgcolor[]            = "#005577";
 static char *colors[][3] = {
        /*               fg           bg           border   */
@@ -189,8 +189,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_a,		defaultgaps,	{0} },
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run") },
-	{ MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("passmenu") },
+	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run -nb black -nf purple -sb green -sf red -p 'run a command: '") },
+	{ MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("rofi -combi -modi window,drun,ssh -theme purple -font 'hack 10' -show combi") },
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
 	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },
 	{ MODKEY,			XK_g,		shiftview,	{ .i = -1 } },
