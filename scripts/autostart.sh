@@ -1,5 +1,7 @@
 #!/bin/bash
-nitrogen --restore &
+IMGs="$HOME/ashWM/img"
+xscreensaver -nosplash &
+nitrogen --random $IMGs &
 conky &
 polkit &
 polkit-dumb-agent &
