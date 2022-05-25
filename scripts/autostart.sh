@@ -6,4 +6,5 @@ conky &
 polkit &
 polkit-dumb-agent &
 dunst &
+xscreensaver -no-splash & 
 dwm
