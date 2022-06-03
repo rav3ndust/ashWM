@@ -40,8 +40,8 @@ I haven't kept `man dwm`/`dwm.1` updated though. PRs welcome on that, lol.
 ## Installation for newbs
 
 ```
-git clone https://github.com/LukeSmithxyz/dwm
-cd dwm
+git clone https://github.com/rav3ndust/ashWM
+cd ashWM
 sudo make install
 ```
 
