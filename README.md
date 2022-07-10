@@ -14,19 +14,29 @@ That's what tiling window managers do best, after all!
 
 A selection of minimal and extensible programs with a swath of custom keybindings that can be easily changed.
 
-## FAQ
+## Keybinds
 
-> What are the bindings?
+> What are the bindings to get around?
 
-This is suckless, mmmbud, the source code is the documentation! Check out [config.h](config.h).
+Here are some of the main keyboard shortcuts you can use to navigate your way around **ashWM**: 
 
-Okay, okay, actually I keep a readme in `larbs.mom` for my whole system, including the binds here.
-Press `super+F1` to view it in dwm (zathura is required for that binding).
-I haven't kept `man dwm`/`dwm.1` updated though. PRs welcome on that, lol.
+> Please note that **Super** = **Windows Key**. 
+
+- **Super** + **Enter** = spawn terminal
+- **Super** + **D** = spawn the nightshade dmenu to run a command
+- **Super** + **Shift** + **D** = spawn nightshade rofi menu, select apps
+- **Super** + **Q** = Kill the highlighted window. 
+- **Super** + **K** = Move focus to window up. 
+- **Super** + **J** = Move focus to window down.
+- **Super** + **L** = Resize focused window to the right. 
+- **Super** + **H** = Resize focused window to the left. 
+- **Super** + **Shift** + **+** = Increase volume. 
+- **Super** + **Shift** + **-** = Decrease volume. 
+- **Super** + **Shift** + **M** = Mute/unmute audio.
 
 ## Patches and features
 
-- [Clickable statusbar](https://dwm.suckless.org/patches/statuscmd/) with my build of [dwmblocks](https://github.com/lukesmithxyz/dwmblocks).
+- [Clickable statusbar](https://dwm.suckless.org/patches/statuscmd/) with [ashblocks](https://github.com/rav3ndust/dwmblocks).
 - Reads [xresources](https://dwm.suckless.org/patches/xresources/) colors/variables (i.e. works with `pywal`, etc.).
 - scratchpad: Accessible with mod+shift+enter.
 - New layouts: bstack, fibonacci, deck, centered master and more. All bound to keys `super+(shift+)t/y/u/i`.
