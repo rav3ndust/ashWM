@@ -36,7 +36,7 @@ Here are some of the main keyboard shortcuts you can use to navigate your way ar
 
 ## Patches and features
 
-- [Clickable statusbar](https://dwm.suckless.org/patches/statuscmd/) with [ashblocks](https://github.com/rav3ndust/dwmblocks).
+- [Clickable statusbar](https://dwm.suckless.org/patches/statuscmd/) with [ashblocks](https://github.com/rav3ndust/ashblocks).
 - Reads [xresources](https://dwm.suckless.org/patches/xresources/) colors/variables (i.e. works with `pywal`, etc.).
 - scratchpad: Accessible with mod+shift+enter.
 - New layouts: bstack, fibonacci, deck, centered master and more. All bound to keys `super+(shift+)t/y/u/i`.
