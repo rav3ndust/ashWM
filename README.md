@@ -30,6 +30,7 @@ Here are some of the main keyboard shortcuts you can use to navigate your way ar
 - **Super** + **J** = Move focus to window down.
 - **Super** + **L** = Resize focused window to the right. 
 - **Super** + **H** = Resize focused window to the left. 
+- **Super** + **Shift** + **Space** = float/tile active window. 
 - **Super** + **Shift** + **+** = Increase volume. 
 - **Super** + **Shift** + **-** = Decrease volume. 
 - **Super** + **Shift** + **M** = Mute/unmute audio.
