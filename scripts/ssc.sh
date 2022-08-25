@@ -5,6 +5,6 @@
 # user selects a screenshot area, 
 # screenshot is saved to clipboard
 #
-escrotum --select --clipboard 
-notify-send "ssc" "Screenshot copied to clipboard."
+flameshot gui 
+notify-send "ssc" "Screenshot operations complete."
 exit
