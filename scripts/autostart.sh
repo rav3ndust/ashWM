@@ -4,7 +4,7 @@ xscreensaver -nosplash &
 nitrogen --random $BACKGROUNDS &
 conky &
 polkit &
-polkit-dumb-agent &
+lxsession &
 dunst &
 xscreensaver -no-splash & 
 # AUDIO SETTINGS
