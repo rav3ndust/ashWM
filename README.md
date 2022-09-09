@@ -22,7 +22,7 @@ Here are some of the main keyboard shortcuts you can use to navigate your way ar
 
 > Please note that **Super** = **Windows Key**. 
 
-- **Super** + **Enter** = spawn terminal
+- **Super** + **Enter** = spawn Alacritty terminal
 - **Super** + **D** = spawn the nightshade dmenu to run a command
 - **Super** + **Shift** + **D** = spawn nightshade rofi menu, select apps
 - **Super** + **Q** = Kill the highlighted window. 
@@ -31,8 +31,11 @@ Here are some of the main keyboard shortcuts you can use to navigate your way ar
 - **Super** + **L** = Resize focused window to the right. 
 - **Super** + **H** = Resize focused window to the left. 
 - **Super** + **Shift** + **Space** = float/tile active window. 
-- **Super** + **Shift** + **+** = Increase volume. 
-- **Super** + **Shift** + **-** = Decrease volume. 
+- **Super** + **A** = fill or unfill gaps in positions of tiled windows.
+- **Super** + **X** = decrease the space in gaps between tiled windows. 
+- **Super** + **Z** = increase the space in gaps between tiled windows. 
+- **Super** + **Shift** + **+** = Increase audio volume. 
+- **Super** + **Shift** + **-** = Decrease audio volume. 
 - **Super** + **Shift** + **M** = Mute/unmute audio.
 
 ## Patches and features
