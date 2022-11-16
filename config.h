@@ -152,10 +152,15 @@ static Key keys[] = {
 	TAGKEYS(			XK_9,		8)
 	{ MODKEY,			XK_0,		view,		{.ui = ~0 } },
 	{ MODKEY|ShiftMask,		XK_0,		tag,		{.ui = ~0 } },
-	{ MODKEY,			XK_minus,	spawn,		SHCMD("pamixer --allow-boost -d 5; kill -44 $(pidof dwmblocks)") },
-	{ MODKEY|ShiftMask,		XK_minus,	spawn,		SHCMD("pamixer --allow-boost -d 15; kill -44 $(pidof dwmblocks)") },
-	{ MODKEY,			XK_equal,	spawn,		SHCMD("pamixer --allow-boost -i 5; kill -44 $(pidof dwmblocks)") },
-	{ MODKEY|ShiftMask,		XK_equal,	spawn,		SHCMD("pamixer --allow-boost -i 15; kill -44 $(pidof dwmblocks)") },
+	// VOLUME controls. 
+	// volume DOWN -5 units
+	{ MODKEY,			XK_minus,	spawn,		SHCMD("pamixer --allow-boost -d 5 & notify-send --expire-time 1000 'nightshade audio mixer' 'Sound decreased. -5'; kill -44 $(pidof dwmblocks)") },
+	// volume DOWN -15 units
+	{ MODKEY|ShiftMask,		XK_minus,	spawn,		SHCMD("pamixer --allow-boost -d 15 & notify-send --expire-time 1000 'nightshade audio mixer' 'Sound decreased. -15'; kill -44 $(pidof dwmblocks)") },
+	// volume UP +5 units
+	{ MODKEY,			XK_equal,	spawn,		SHCMD("pamixer --allow-boost -i 5 & notify-send --expire-time 1000 'nightshade audio mixer' 'Sound increased. +5'; kill -44 $(pidof dwmblocks)") },
+	// volume UP +15 units
+	{ MODKEY|ShiftMask,		XK_equal,	spawn,		SHCMD("pamixer --allow-boost -i 15 & notify-send --expire-time 1000 'nightshade audio mixer' 'Sound increased. +15'; kill -44 $(pidof dwmblocks)") },
 	{ MODKEY,			XK_BackSpace,	spawn,		SHCMD("sysact") },
 	{ MODKEY|ShiftMask,		XK_BackSpace,	spawn,		SHCMD("sysact") },
 
@@ -163,7 +168,9 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_Tab,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_q,		killclient,	{0} },
 	{ MODKEY|ShiftMask,		XK_q,		spawn,		SHCMD("sysact") },
+	// Spawn default Browser
 	{ MODKEY,			XK_w,		spawn,		SHCMD("$BROWSER") },
+	// Spawn nmtui network manager terminal control. 
 	{ MODKEY|ShiftMask,		XK_w,		spawn,		SHCMD(TERMINAL " -e sudo nmtui") },
 	{ MODKEY,			XK_e,		spawn,		SHCMD(TERMINAL " -e neomutt ; pkill -RTMIN+12 dwmblocks; rmdir ~/.abook") },
 	{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD(TERMINAL " -e abook -C ~/.config/abook/abookrc --datafile ~/.config/abook/addressbook") },
@@ -192,8 +199,11 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_a,		defaultgaps,	{0} },
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
+	// Nightshade Menu - custom dmenu in nightshade coloring to select applications and run commands.
 	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run -nb black -nf purple -sb green -sf red -p 'run a command: '") },
+	// Nightshade Rofi - a customized rofi in nightshade coloring as an alternative for spawning applications and running commands.
 	{ MODKEY|ShiftMask,		XK_d,		spawn,		SHCMD("rofi -combi -modi window,drun,ssh -theme purple -font 'hack 10' -show combi") },
+	// ..
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
 	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },
 	{ MODKEY,			XK_g,		shiftview,	{ .i = -1 } },
@@ -241,6 +251,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_F1,		spawn,		SHCMD("groff -mom /usr/local/share/dwm/larbs.mom -Tpdf | zathura -") },
 	{ MODKEY,			XK_F2,		spawn,		SHCMD("tutorialvids") },
 	{ MODKEY,			XK_F3,		spawn,		SHCMD("displayselect") },
+	// CLICKABLE - spawn pulsemixer for finer-grained volume and source control. 
 	{ MODKEY,			XK_F4,		spawn,		SHCMD(TERMINAL " -e pulsemixer; kill -44 $(pidof dwmblocks)") },
 	/* { MODKEY,			XK_F5,		xrdb,		{.v = NULL } }, */
 	{ MODKEY,			XK_F6,		spawn,		SHCMD("torwrap") },
